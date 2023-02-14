@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Editor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/c319ac8b3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <header>
+      <h1 class="typing-demo mx-auto text-3xl text-center font-semibold mt-6">
+        My <span class="text-blue-500">Text Editor</span>
+      </h1>
+    </header>
+    <main class="max-w-4xl mx-auto mt-8 shadow-2xl shadow-blue-500">
+      <section class="border-2 border-gray-500 rounded-md p-5">
+        <div class="flex flex-row justify-between items-center mt-4">
+          <div class="flex justify-center items-center gap-5">
+            <i
+              id="btn-bold"
+              class="fa-solid fa-bold hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+            <i
+              id="btn-italic"
+              class="fa-solid fa-italic hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+            <i
+              id="btn-underline"
+              class="fa-solid fa-underline hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <i
+              id="btn-left"
+              class="fa-solid fa-align-left hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+            <i
+              id="btn-center"
+              class="fa-solid fa-align-center hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+            <i
+              id="btn-right"
+              class="fa-solid fa-align-right hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+            <i
+              id="btn-justify"
+              class="fa-solid fa-align-justify hover:bg-blue-200 p-2 rounded-md"
+            ></i>
+          </div>
+          <div class="flex justify-center items-center gap-5">
+            <input
+              id="btn-font-size"
+              class="bg-blue-50 w-16 border-2 border-black rounded-md text-blue-700 font-medium px-2"
+              type="number"
+              placeholder="0"
+            />
+            <p
+              id="btn-case"
+              class="inline text-xl font-semibold hover:bg-blue-200 p-1 rounded-md"
+            >
+              aA
+            </p>
+            <input
+              id="btn-color"
+              class="hover:bg-blue-200 p-1 rounded-md"
+              type="color"
+            />
+          </div>
+        </div>
+        <hr class="mt-4 border-2 border-gray-500" />
+        <textarea
+          id="textarea-field"
+          class="w-full h-96 mt-6 border-2 border-gray-500 rounded-md p-4"
+          name=""
+          id=""
+          cols=""
+          rows="15"
+        ></textarea>
+      </section>
+
+      <script src="./js/utils.js"></script>
+      <script src="./js/editor.js"></script>
+    </main>
+  </body>
+</html>

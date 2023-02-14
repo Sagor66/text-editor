@@ -1,0 +1,24 @@
+.typing-demo {
+  width: 15rem;
+  white-space: nowrap;
+  overflow: hidden;
+  border-right: 2px solid rgb(59, 131, 246);
+  animation: typing 3s infinite, cursor 0.25s step-end infinite alternate;
+}
+
+@keyframes cursor {
+  50% {
+    border-color: transparent;
+  }
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+}
+
+.active {
+  border-radius: 6px;
+  background-color: rgba(59, 131, 246, 0.3);
+}
